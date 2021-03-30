@@ -1,13 +1,20 @@
 import React, { Component } from "react";
 import "./App.css";
 import CardList from "./Components/CardList/CardList";
-//import CardList from './Components/CardList/CardList';
+import Header from "./Components/Header/Header";
+import SearchBar from "./Components/SearchBar/SearchBar";
 
-class App extends Component {
+type AppState = {
+  users: [],
+  search: string
+}
+
+class App extends Component<{}, AppState> {
   constructor(props: any) {
     super(props);
     this.state = {
       users: [],
+      search: '',
     };
   }
 
@@ -15,52 +22,14 @@ class App extends Component {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((data) => this.setState({ users: data }));
-    // fetch("https://jsonplaceholder.typicode.com/users")
-    // .then(response => response.body)
-    // .then((rb) => {
-    //   // @ts-ignore
-    //   const reader = rb.getReader();
-
-    //   return new ReadableStream({
-    //     start(controller) {
-    //       // The following function handles each data chunk
-    //       function push() {
-    //         // "done" is a Boolean and value a "Uint8Array"
-    //         //ts-ifno
-    //         reader.read().then( ({done, value}) => {
-    //           // If there is no more data to read
-    //           if (done) {
-    //             console.log('done', done);
-    //             controller.close();
-    //             return;
-    //           }
-    //           // Get the data and send it to the browser via the controller
-    //           controller.enqueue(value);
-    //           // Check chunks by logging to the console
-    //           console.log(done, value);
-    //           push();
-    //         })
-    //       }
-
-    //       push();
-    //     }
-    //   });
-    // })
-    // .then(stream => {
-    //   // Respond with our stream
-    //   return new Response(stream, { headers: { "Content-Type": "text/html" } }).text();
-    // })
-    // .then(result => {
-    //   // Do things with result
-    //   console.log(result);
-    // });
   }
 
   render() {
-    // @ts-ignore
-    const {users} = this.state;
+    const {users, search} = this.state;
     return (
       <div className="App">
+        <Header />
+        <SearchBar placeholder="" handleChange={(e) => console.log(e.target.value, search)}/>
         <CardList users={users} />
       </div>
     );

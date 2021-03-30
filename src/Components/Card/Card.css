@@ -5,7 +5,9 @@
   max-width: 180px;
   margin: 8px;
   border-radius: 20px;
-  transition: transform 100ms;
+  border: 2px solid #4ec1bc;
+  transition: transform 200ms;
+  cursor: alias;
 }
 
 .elipsis {
@@ -14,10 +16,8 @@
   text-overflow: ellipsis;
 }
 
-.card img {
-    filter: brightness(0.6);
-}
-.card:hover, .card:hover img {
-    filter: brightness(1);
-    transform: scale(1.050);
+.card:hover,
+.card:hover img {
+  filter: drop-shadow(2px 4px 6px black);
+  transform: scale(1.05);
 }
