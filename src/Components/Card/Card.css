@@ -7,7 +7,7 @@
   border-radius: 20px;
   border: 2px solid #4ec1bc;
   transition: transform 200ms;
-  cursor: alias;
+  cursor: pointer;
 }
 
 .elipsis {
