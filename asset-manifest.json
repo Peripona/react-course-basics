@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-course-basics/static/css/main.a2303b51.chunk.css",
+    "main.js": "/react-course-basics/static/js/main.5c65d24e.chunk.js",
+    "main.js.map": "/react-course-basics/static/js/main.5c65d24e.chunk.js.map",
+    "runtime-main.js": "/react-course-basics/static/js/runtime-main.4a2077b5.js",
+    "runtime-main.js.map": "/react-course-basics/static/js/runtime-main.4a2077b5.js.map",
+    "static/js/2.91125bc6.chunk.js": "/react-course-basics/static/js/2.91125bc6.chunk.js",
+    "static/js/2.91125bc6.chunk.js.map": "/react-course-basics/static/js/2.91125bc6.chunk.js.map",
+    "static/js/3.814f6aa4.chunk.js": "/react-course-basics/static/js/3.814f6aa4.chunk.js",
+    "static/js/3.814f6aa4.chunk.js.map": "/react-course-basics/static/js/3.814f6aa4.chunk.js.map",
+    "index.html": "/react-course-basics/index.html",
+    "static/css/main.a2303b51.chunk.css.map": "/react-course-basics/static/css/main.a2303b51.chunk.css.map",
+    "static/js/2.91125bc6.chunk.js.LICENSE.txt": "/react-course-basics/static/js/2.91125bc6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a2077b5.js",
+    "static/js/2.91125bc6.chunk.js",
+    "static/css/main.a2303b51.chunk.css",
+    "static/js/main.5c65d24e.chunk.js"
+  ]
+}
